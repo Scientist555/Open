@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="username">Username: </label>
+            <input required type="text" name="username">
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            <input required type="password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="login" name="Войти">
+        </p>
+    </form>
+    <form action="" method="post">
+        {% if mesg %}
+            <p>{{mesg}}</p>
+            {% endif %}
+    </form>
+    <form action="" method="post">
+        {% if mesg2 %}
+            <p>{{mesg2}}</p>
+            {% endif %}
+    </form>
+    
+    <form action="/registration/">
+        <button>Регистрация</button>
+    </form>
+</body>
+</html>
